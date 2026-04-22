@@ -1,2 +1,0 @@
-def deepwriting_class():
-    
