@@ -1,0 +1,68 @@
+digraph {
+	subgraph cluster_batch {
+		label=batch labeljust=r labelloc=b
+		s [label=s fillcolor=white shape=ellipse style=filled]
+		L [label=L fillcolor=gray shape=ellipse style=filled]
+		z_0 [label=z_0 fillcolor=white shape=ellipse style=filled]
+		dxdy_0 [label=dxdy_0 fillcolor=gray shape=ellipse style=filled]
+		pen_0 [label=pen_0 fillcolor=gray shape=ellipse style=filled]
+		eos_0 [label=eos_0 fillcolor=gray shape=ellipse style=filled]
+		z_1 [label=z_1 fillcolor=white shape=ellipse style=filled]
+		dxdy_1 [label=dxdy_1 fillcolor=gray shape=ellipse style=filled]
+		pen_1 [label=pen_1 fillcolor=gray shape=ellipse style=filled]
+		eos_1 [label=eos_1 fillcolor=gray shape=ellipse style=filled]
+		z_2 [label=z_2 fillcolor=white shape=ellipse style=filled]
+		dxdy_2 [label=dxdy_2 fillcolor=gray shape=ellipse style=filled]
+		pen_2 [label=pen_2 fillcolor=gray shape=ellipse style=filled]
+		eos_2 [label=eos_2 fillcolor=gray shape=ellipse style=filled]
+		z_3 [label=z_3 fillcolor=white shape=ellipse style=filled]
+		dxdy_3 [label=dxdy_3 fillcolor=gray shape=ellipse style=filled]
+		pen_3 [label=pen_3 fillcolor=gray shape=ellipse style=filled]
+		eos_3 [label=eos_3 fillcolor=gray shape=ellipse style=filled]
+		z_4 [label=z_4 fillcolor=white shape=ellipse style=filled]
+		dxdy_4 [label=dxdy_4 fillcolor=gray shape=ellipse style=filled]
+		pen_4 [label=pen_4 fillcolor=gray shape=ellipse style=filled]
+		eos_4 [label=eos_4 fillcolor=gray shape=ellipse style=filled]
+	}
+	s -> L
+	s -> z_0
+	s -> dxdy_0
+	z_0 -> dxdy_0
+	s -> pen_0
+	z_0 -> pen_0
+	s -> eos_0
+	z_0 -> eos_0
+	s -> z_1
+	z_0 -> z_1
+	s -> dxdy_1
+	z_1 -> dxdy_1
+	s -> pen_1
+	z_1 -> pen_1
+	s -> eos_1
+	z_1 -> eos_1
+	s -> z_2
+	z_1 -> z_2
+	s -> dxdy_2
+	z_2 -> dxdy_2
+	s -> pen_2
+	z_2 -> pen_2
+	s -> eos_2
+	z_2 -> eos_2
+	s -> z_3
+	z_2 -> z_3
+	s -> dxdy_3
+	z_3 -> dxdy_3
+	s -> pen_3
+	z_3 -> pen_3
+	s -> eos_3
+	z_3 -> eos_3
+	s -> z_4
+	z_3 -> z_4
+	s -> dxdy_4
+	z_4 -> dxdy_4
+	s -> pen_4
+	z_4 -> pen_4
+	s -> eos_4
+	z_4 -> eos_4
+	distribution_description_node [label="s ~ Normal\lL ~ Categorical\lz_0 ~ Normal\ldxdy_0 ~ Normal\lpen_0 ~ Bernoulli\leos_0 ~ Bernoulli\lz_1 ~ Normal\ldxdy_1 ~ Normal\lpen_1 ~ Bernoulli\leos_1 ~ Bernoulli\lz_2 ~ Normal\ldxdy_2 ~ Normal\lpen_2 ~ Bernoulli\leos_2 ~ Bernoulli\lz_3 ~ Normal\ldxdy_3 ~ Normal\lpen_3 ~ Bernoulli\leos_3 ~ Bernoulli\lz_4 ~ Normal\ldxdy_4 ~ Normal\lpen_4 ~ Bernoulli\leos_4 ~ Bernoulli\lbetter_character_model$$$style_prior.class_emb.weight : Real()\lbetter_character_model$$$style_prior.net.0.weight : Real()\lbetter_character_model$$$style_prior.net.0.bias : Real()\lbetter_character_model$$$style_prior.net.2.weight : Real()\lbetter_character_model$$$style_prior.net.2.bias : Real()\lbetter_character_model$$$style_prior.loc_head.weight : Real()\lbetter_character_model$$$style_prior.loc_head.bias : Real()\lbetter_character_model$$$style_prior.scale_head.weight : Real()\lbetter_character_model$$$style_prior.scale_head.bias : Real()\lbetter_character_model$$$length_net.net.0.weight : Real()\lbetter_character_model$$$length_net.net.0.bias : Real()\lbetter_character_model$$$length_net.net.2.weight : Real()\lbetter_character_model$$$length_net.net.2.bias : Real()\lbetter_character_model$$$length_net.net.4.weight : Real()\lbetter_character_model$$$length_net.net.4.bias : Real()\lbetter_character_model$$$init_z_net.net.0.weight : Real()\lbetter_character_model$$$init_z_net.net.0.bias : Real()\lbetter_character_model$$$init_z_net.net.2.weight : Real()\lbetter_character_model$$$init_z_net.net.2.bias : Real()\lbetter_character_model$$$init_z_net.loc_head.weight : Real()\lbetter_character_model$$$init_z_net.loc_head.bias : Real()\lbetter_character_model$$$init_z_net.scale_head.weight : Real()\lbetter_character_model$$$init_z_net.scale_head.bias : Real()\lbetter_character_model$$$transition_net.net.0.weight : Real()\lbetter_character_model$$$transition_net.net.0.bias : Real()\lbetter_character_model$$$transition_net.net.2.weight : Real()\lbetter_character_model$$$transition_net.net.2.bias : Real()\lbetter_character_model$$$transition_net.loc_head.weight : Real()\lbetter_character_model$$$transition_net.loc_head.bias : Real()\lbetter_character_model$$$transition_net.scale_head.weight : Real()\lbetter_character_model$$$transition_net.scale_head.bias : Real()\lbetter_character_model$$$emission_net.net.0.weight : Real()\lbetter_character_model$$$emission_net.net.0.bias : Real()\lbetter_character_model$$$emission_net.net.2.weight : Real()\lbetter_character_model$$$emission_net.net.2.bias : Real()\lbetter_character_model$$$emission_net.dxdy_loc_head.weight : Real()\lbetter_character_model$$$emission_net.dxdy_loc_head.bias : Real()\lbetter_character_model$$$emission_net.dxdy_scale_head.weight : Real()\lbetter_character_model$$$emission_net.dxdy_scale_head.bias : Real()\lbetter_character_model$$$emission_net.pen_logit_head.weight : Real()\lbetter_character_model$$$emission_net.pen_logit_head.bias : Real()\lbetter_character_model$$$emission_net.eos_logit_head.weight : Real()\lbetter_character_model$$$emission_net.eos_logit_head.bias : Real()\lbetter_character_model$$$style_guide.class_emb.weight : Real()\lbetter_character_model$$$style_guide.gru.weight_ih_l0 : Real()\lbetter_character_model$$$style_guide.gru.weight_hh_l0 : Real()\lbetter_character_model$$$style_guide.gru.bias_ih_l0 : Real()\lbetter_character_model$$$style_guide.gru.bias_hh_l0 : Real()\lbetter_character_model$$$style_guide.gru.weight_ih_l0_reverse : Real()\lbetter_character_model$$$style_guide.gru.weight_hh_l0_reverse : Real()\lbetter_character_model$$$style_guide.gru.bias_ih_l0_reverse : Real()\lbetter_character_model$$$style_guide.gru.bias_hh_l0_reverse : Real()\lbetter_character_model$$$style_guide.net.0.weight : Real()\lbetter_character_model$$$style_guide.net.0.bias : Real()\lbetter_character_model$$$style_guide.net.2.weight : Real()\lbetter_character_model$$$style_guide.net.2.bias : Real()\lbetter_character_model$$$style_guide.loc_head.weight : Real()\lbetter_character_model$$$style_guide.loc_head.bias : Real()\lbetter_character_model$$$style_guide.scale_head.weight : Real()\lbetter_character_model$$$style_guide.scale_head.bias : Real()\lbetter_character_model$$$local_guide.gru.weight_ih_l0 : Real()\lbetter_character_model$$$local_guide.gru.weight_hh_l0 : Real()\lbetter_character_model$$$local_guide.gru.bias_ih_l0 : Real()\lbetter_character_model$$$local_guide.gru.bias_hh_l0 : Real()\lbetter_character_model$$$local_guide.loc_head.weight : Real()\lbetter_character_model$$$local_guide.loc_head.bias : Real()\lbetter_character_model$$$local_guide.scale_head.weight : Real()\lbetter_character_model$$$local_guide.scale_head.bias : Real()\l" shape=plaintext]
+}
